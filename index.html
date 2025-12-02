@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INFILTR8</title>
+    <link
+      rel="shortcut icon"
+      href="images/web/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8c14e3130c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/INFILTR8.png" class="logo" alt="MyLogo" />
+          <ul id="sidemenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#photos">Gallery</a></li>
+            <li><a href="#services">Download</a></li>
+            <li><a href="#portfolio">Developers</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>An Online Multiplayer Social Deduction Game</p>
+          <h1><span class="auto-typed">INFILTR8</span></h1>
+        </div>
+      </div>
+    </div>
+    <!--About Section-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/android/play_store_512.png" alt="App icon" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">INFILTR8</h1>
+            <p>
+              Step into the world of INFILTR8, a social-deduction multiplayer
+              game designed for IT students and tech-savvy players! Finish
+              technical tasks, analyze system anomalies, and uncover the hidden
+              hackers sabotaging your network from within. <br />
+              <br />Whether you become a
+              <span class="analyst">Analyst</span> restoring systems or a
+              <span class="hacker">Hacker</span>
+              causing silent chaos, every match tests your logic, strategy, and
+              trust.Step into the world of INFILTR8, a social-deduction
+              multiplayer game designed for IT students and tech-savvy players!
+              Finish technical tasks, analyze system anomalies, and uncover the
+              hidden hackers sabotaging your network from within. Whether you
+              become a Analyst restoring systems or a Hacker causing silent
+              chaos, every match tests your logic, strategy, and trust.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Minimum Requirements
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Recommended
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>OS: </span>Android 9 (Pie)</li>
+                <li>
+                  <span>CPU: </span>Quad-core 1.8 GHz (Snapdragon 450 / 625 or
+                  equivalent)
+                </li>
+                <li><span>RAM: </span>2 GB or more</li>
+                <li>
+                  <span>GPU: </span>OpenGL ES 3.0 compatible (Adreno 505 /
+                  Mali-G51)
+                </li>
+                <li><span>Storage: </span>500 MB free</li>
+                <li>
+                  <span>Developer Notes: </span>Basic performance; limited
+                  shadows and extra cameras.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>OS: </span>Android 9(Pie) or higher</li>
+                <li>
+                  <span>CPU: </span>Octa-core 2.0+ GHz (Snapdragon 662 / 720G /
+                  732G or equivalent)
+                </li>
+                <li><span>RAM: </span>4 GB or more</li>
+                <li>
+                  <span>GPU: </span>Mid-range GPU (Adreno 610+ / Mali-G52+)
+                </li>
+                <li><span>Storage: </span>1 GB free</li>
+                <li>
+                  <span>Developer Notes: </span>Smooth gameplay with 2D shadows
+                  and multiple in-game cameras.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Gameplay Photos Section -->
+    <div id="photos">
+      <div class="container">
+        <h1 class="sub-title">Game Photos</h1>
+
+        <div class="photos-list">
+          <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 1.jpg"
+              loading="lazy"
+              alt="GP 1"
+              onclick="openLightbox(this)"
+            />
+          </div>
+
+          <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 2.jpg"
+              loading="lazy"
+              alt="GP 2"
+              onclick="openLightbox(this)"
+            />
+          </div>
+
+          <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 3.jpg"
+              loading="lazy"
+              alt="GP 3"
+              onclick="openLightbox(this)"
+            />
+          </div>
+
+          <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 4.jpg"
+              loading="lazy"
+              alt="GP 4"
+              onclick="openLightbox(this)"
+            />
+          </div>
+
+          <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 5.png"
+              loading="lazy"
+              alt="GP 5"
+              onclick="openLightbox(this)"
+            />
+          </div>
+
+          <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 6.png"
+              loading="lazy"
+              alt="GP 6"
+              onclick="openLightbox(this)"
+            />
+          </div>
+
+          <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 7.png"
+              loading="lazy"
+              alt="GP 7"
+              onclick="openLightbox(this)"
+            />
+          </div>
+
+          <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 8.png"
+              loading="lazy"
+              alt="GP 8"
+              onclick="openLightbox(this)"
+            />
+          </div>
+
+          <!-- <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 9.png"
+              loading="lazy"
+              alt="GP 9"
+              onclick="openLightbox(this)"
+            />
+          </div> -->
+
+          <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 10.png"
+              loading="lazy"
+              alt="GP 10"
+              onclick="openLightbox(this)"
+            />
+          </div>
+
+          <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 11.png"
+              loading="lazy"
+              alt="GP 11"
+              onclick="openLightbox(this)"
+            />
+          </div>
+
+          <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 12.png"
+              loading="lazy"
+              alt="GP 12"
+              onclick="openLightbox(this)"
+            />
+          </div>
+
+          <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 13.png"
+              loading="lazy"
+              alt="GP 13"
+              onclick="openLightbox(this)"
+            />
+          </div>
+
+          <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 14.png"
+              loading="lazy"
+              alt="GP 14"
+              onclick="openLightbox(this)"
+            />
+          </div>
+
+          <div class="photo-item">
+            <img
+              src="images/Gameplay Photos/Photos/GP 15.png"
+              loading="lazy"
+              alt="GP 15"
+              onclick="openLightbox(this)"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox Popup -->
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" />
+    </div>
+
+    <!---Official Links and Download Section-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Official Links and Download</h1>
+        <div class="services-list">
+          <div>
+            <!-- <i class="fa-brands fa-google-drive google-drive"></i> -->
+            <img
+              src="images/google drive.png"
+              alt="google-drive"
+              width="70"
+              height="70"
+            />
+            <h2>Google Drive</h2>
+            <p>Download INFILTR8 now through our Google Drive link.</p>
+            <a
+              href="https://drive.google.com/drive/folders/1oxJpq1xpVhXyGsgY8yit-eQS6Pr82tAL?usp=sharing"
+              target="_blank"
+              >Download</a
+            >
+          </div>
+          <div>
+            <!-- <i class="fa-brands fa-facebook-messenger messenger"></i> -->
+            <img
+              src="images/Messenger Icon/Primary Icon/Messenger_Icon_Primary_Blue.png"
+              alt="messenger"
+              width="70"
+              height="70"
+            />
+            <h2>Community Server</h2>
+            <p>Join our official INFILTR8 community server today.</p>
+            <a
+              href="https://m.me/cm/AbbhTK8IoJz4fgAn/?send_source=cm%3Acopy_invite_link"
+              target="_blank"
+              >Join Community Server</a
+            >
+          </div>
+          <div>
+            <!-- <i class="fa-brands fa-google-play google-play"></i> -->
+            <img
+              src="images/playstore.png"
+              alt="playstore"
+              width="70"
+              height="70"
+            />
+            <h2>Playstore</h2>
+            <p>
+              Sign up for the INFILTR8 closed beta testing now. <br />
+              <br />
+              <span class="note">*Note: Please use valid gmail account.</span>
+            </p>
+            <a href="#beta">Sign up here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Developers-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Meet the Team:</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Developer/John Steward.jpg" alt="JSP" />
+            <div class="layer">
+              <h3>John Steward Pavo</h3>
+              <p>
+                I’m John Steward Pavo, one of the developers behind this game. I
+                focus on the programming side — building systems, writing C#
+                scripts, and connecting mechanics to make sure the gameplay
+                behaves the way we imagine it. From designing game logic and
+                systems to fixing strange bugs at 3AM, I bring our team’s ideas
+                to life and keep the engine running smoothly.
+              </p>
+              <a
+                href="https://www.linkedin.com/in/john-steward-pavo/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Developer/Angelo.jpeg" alt="AD" />
+            <div class="layer">
+              <h3>Angelo Dela Torre</h3>
+              <p>
+                "Perfection is achieved not when there is nothing more to add,
+                but when there is nothing left to take away" <br /><br />
+                I made this website.
+              </p>
+              <a
+                href="https://www.linkedin.com/in/dela-torre-angelo-5a6777267/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Developer/Dur.jpg" alt="DR" />
+            <div class="layer">
+              <h3>Dur Ramos</h3>
+              <p>
+                Hi, I’m Dur P. Ramos, an aspiring Data Analyst. <br />
+                <br />
+                I’m not usually into games, especially challenging ones, but
+                this project pushed me out of my comfort zone. Designing the UI
+                was fun, and the game’s educational concept made the experience
+                worthwhile. Working on this also made me consider exploring a
+                new career path and discovering more of my potential.
+              </p>
+              <a href="https://www.linkedin.com/in/durramos/" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Developer/Abigail.jpg" alt="DR" />
+            <div class="layer">
+              <h3>Abigail Florendo</h3>
+              <p>
+                You could say I bring the spark to the code. I've always had a
+                passion for artsy design, which I happily channel into crafting
+                engaging User Interfaces (UI). I enjoy being able to blend
+                creativity with technology in my chosen course. <br />
+                <br />I find downtime watching K-dramas and C-dramas. Also a
+                dedicated K-Pop stan—representing CORTIS & SEVENTEEN.
+              </p>
+              <a
+                href="https://www.linkedin.com/in/abigailflorendo/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Developer/Amihan.jpg" alt="AO" />
+            <div class="layer">
+              <h3>Amihan Olango</h3>
+              <p>Busy pa ako lods, maya nalang.</p>
+              <a
+                href="https://www.linkedin.com/in/amihan-olango-3b163a320/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Contact Section-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Us</h1>
+            <p>
+              <i class="fa-sharp fa-solid fa-paper-plane"></i
+              >infiltr8.dev@gmail.com
+            </p>
+            <div class="social-icons">
+              <!-- <a
+                href="https://www.facebook.com/angelo.delatorre.505960?mibextid=ZbWKwL"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/melancholy21u/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/dela-torre-angelo-5a6777267/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/melancholy21?fbclid=IwAR2Nw3a5Zrr1uEk4kEW4tQUxOFKB8B3jC7DiSO1elI-S6UXuJXiU5wX1tFQ"
+                ><i class="fa-brands fa-github"></i
+              ></a> -->
+            </div>
+          </div>
+          <div id="beta" class="contact-right">
+            <h2>Sign up for INFILTR8 close beta testing</h2>
+            <form id="betaForm" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Not required but if you have any message or questions, feel free to write it here."
+              ></textarea>
+              <button id="submitBtn" type="submit" class="btn btn2">
+                Submit
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © 2025 <span class="game-title">INFILTR8</span> - All Rights Reserved.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const scriptURL =
+          "https://script.google.com/macros/s/AKfycbwOQlpvRbpw9su-C964ipkC56sG55zuvrYxvHMkjca9fiTVXgUFdQjXy3W4z2KjWzStOQ/exec";
+        const form = document.getElementById("betaForm");
+        const msg = document.getElementById("msg");
+        const submitBtn = document.getElementById("submitBtn");
+
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          msg.textContent = "Sending...";
+          submitBtn.disabled = true;
+
+          try {
+            const response = await fetch(scriptURL, {
+              method: "POST",
+              body: new FormData(form),
+            });
+
+            msg.textContent = "Message sent successfully!";
+            form.reset();
+          } catch (err) {
+            msg.textContent = "Error sending message: " + err.message;
+            console.error(err);
+          }
+
+          submitBtn.disabled = false;
+          setTimeout(() => (msg.textContent = ""), 5000);
+        });
+      });
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-typed", {
+        strings: ["INFILTR8 ", " TRUST NO ONE!"],
+        typeSpeed: 200,
+        backSpeed: 400,
+        loop: true,
+      });
+    </script>
+
+    <script>
+      function openLightbox(img) {
+        document.getElementById("lightbox-img").src = img.src;
+        document.getElementById("lightbox").style.display = "flex";
+      }
+
+      function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
