@@ -198,6 +198,24 @@ nav ul li a:hover::after {
 .services-list div a:hover {
   color: #87ceeb;
 }
+/* Video Section */
+.video-wrapper {
+  width: 75%; /* small/medium size */
+  max-width: 1200px; /* limit size for game websites */
+  min-width: 320px;
+  margin: 40px auto; /* centers horizontally */
+  border: 3px solid cyan; /* cyan border */
+  padding: 5px; /* spacing inside border */
+  border-radius: 10px; /* optional: smoother look */
+  box-shadow: 0 0 15px cyan; /* glowing effect */
+}
+
+.video-wrapper video {
+  width: 100%; /* responsive scaling */
+  height: auto; /* keeps aspect ratio */
+  display: block;
+  border-radius: 6px;
+}
 
 .services-list div:hover {
   /* background-color: #87ceeb; */
